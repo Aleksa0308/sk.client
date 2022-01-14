@@ -134,6 +134,13 @@ body{
 }
 .labela{
 	color: white;
+	
+}
+.Rank{
+	color:grey;
+	font-weight: bold;
+	padding-left: 100px;
+	left: 150px;
 }
 .booking-form select.form-control+.select-arrow:after {
 	content: '\279C';
