@@ -132,7 +132,9 @@ body{
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 14px;
 }
-
+.labela{
+	color: white;
+}
 .booking-form select.form-control+.select-arrow:after {
 	content: '\279C';
 	display: block;
