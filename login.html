@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Reservation</title>
+	<title>Log in</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
@@ -57,17 +57,38 @@
 							<div class="form-btn">
 								<button class="submit-btn">Login</button>
 							</div>
-                            <div class="form-btn">
-								<button class="register-btn">Register</button>
-							</div>
+                            
 						</form>
+                        <div class="form-btn">
+                            <button class="register-btn">Register</button>
+                        </div>
 					</div>
 				</div>
+                
 			</div>
 		</div>
+        
 	</div>
 
-	
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$('.form-control').each(function () {
+			floatedLabel($(this));
+		});
+
+		$('.form-control').on('input', function () {
+			floatedLabel($(this));
+		});
+
+		function floatedLabel(input) {
+			var $field = input.closest('.form-group');
+			if (input.val()) {
+				$field.addClass('input-not-empty');
+			} else {
+				$field.removeClass('input-not-empty');
+			}
+		}
+	</script>
 
 </body>
 
