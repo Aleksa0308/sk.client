@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://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@github.com/Aleksa0308/sk.client.git"
   },
-  "module": "index.js",
   "author": "= <=>",
   "license": "ISC",
   "bugs": {
@@ -23,5 +23,14 @@
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "helmet": "^5.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.48.0"
   }
 }

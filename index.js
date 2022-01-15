@@ -1,20 +1,11 @@
 /**
  * Required External Modules
  */
-import * as dotenv from 'dotenv';
-import express from 'express';
-import cors from 'cors';
-import helmet from 'helmet';
-import {mainRouter} from './src/controllers/mainRouter';
-// import {usersRouter} from './controllers/api/usersRouter';
-// import {licensesRouter} from './controllers/api/licensesRouter';
-// import {campaignsRouter} from './controllers/api/campaignsRouter';
-// import {funnelsRouter} from './controllers/api/funnelsRouter';
-// import {adminRouter} from './controllers/admin/adminRouter';
-// import {adminsRouter} from './controllers/api/adminsRouter';
-// import {loginRouter} from './controllers/api/loginRouter';
-// import {resetsRouter} from './controllers/api/resetsRouter';
-
+const dotenv = require('dotenv');
+const express = require('express');
+const cors = require('cors');
+const helmet = require('helmet');
+const mainRouter = require('./src/controllers/mainRouter');
 
 dotenv.config();
 

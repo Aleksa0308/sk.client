@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<div id="booking" class="section">
+<div id="registration" class="section">
     <div class="section-center">
         <div class="container">
             <div class="row">
@@ -78,26 +78,6 @@
         </div>
     </div>
 </div>
-
-<script src="js/jquery.min.js"></script>
-<script>
-    $('.form-control').each(function () {
-        floatedLabel($(this));
-    });
-
-    $('.form-control').on('input', function () {
-        floatedLabel($(this));
-    });
-
-    function floatedLabel(input) {
-        var $field = input.closest('.form-group');
-        if (input.val()) {
-            $field.addClass('input-not-empty');
-        } else {
-            $field.removeClass('input-not-empty');
-        }
-    }
-</script>
 
 </body>
 
