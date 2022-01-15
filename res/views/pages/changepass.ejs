@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Log in</title>
+    <%- include('../partials/head'); %>
+</head>
+
+<body>
+<div id="booking" class="section">
+    <div class="section-center">
+        <div class="container">
+            <div class="row">
+                <div class="booking-form">
+                    <div class="form-header">
+                        <h1>Log In</h1>
+                    </div>
+                    <form>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Old password</label>
+                                    <input class="form-control" type="password" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>New Password</label>
+                                    <input class="form-control" type="password" required>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-btn">
+                            <button class="submit-btn">Confirm</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+    $('.form-control').each(function () {
+        floatedLabel($(this));
+    });
+
+    $('.form-control').on('input', function () {
+        floatedLabel($(this));
+    });
+
+    function floatedLabel(input) {
+        var $field = input.closest('.form-group');
+        if (input.val()) {
+            $field.addClass('input-not-empty');
+        } else {
+            $field.removeClass('input-not-empty');
+        }
+    }
+</script>
+
+</body>
+
+</html>
