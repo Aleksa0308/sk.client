@@ -1,0 +1,22 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Aleksa0308/sk.client.git"
+  },
+  "author": "= <=>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aleksa0308/sk.client/issues"
+  },
+  "homepage": "https://github.com/Aleksa0308/sk.client#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
